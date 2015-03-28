@@ -2,8 +2,8 @@ import pika, sys
 
 #establish connection to broker
 #using default vhost '/' because none specified
-credentials = pika.PlainCredentials("guest", "guest")
-conn_params = pika.ConnectionParameters("137.140.8.122", credentials = credentials)
+credentials = pika.PlainCredentials("forcel", "forcel")
+conn_params = pika.ConnectionParameters("137.140.8.121", credentials = credentials)
 conn_broker = pika.BlockingConnection(conn_params)
 
 #obtain channel
